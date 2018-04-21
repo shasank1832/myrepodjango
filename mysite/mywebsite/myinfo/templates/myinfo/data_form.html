@@ -1,0 +1,17 @@
+{%extends 'myinfo/base.html' %}
+
+{% block content %}
+<div class='container'>
+
+    <font color='red'><strong><h1>Tell About Me</h1></strong></font>
+<font color='green'>
+    <form method="POST" class="post-form">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit" class="save btn btn-default">Save it</button>
+    </form>
+
+    <script>var editor = new MediumEditor('.editable');</script>
+  </font>
+</div>
+{% endblock %}

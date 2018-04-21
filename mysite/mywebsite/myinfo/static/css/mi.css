@@ -1,0 +1,24 @@
+
+
+.navclass{
+font-family:  monospace;
+padding: 11px;
+font-weight: 900;
+position: static;
+overflow-y: auto;
+
+}
+
+
+
+
+}
+body{
+background-color: red;
+  overflow-y: scroll;
+
+}
+
+h1{
+  font-family: monospace;
+}

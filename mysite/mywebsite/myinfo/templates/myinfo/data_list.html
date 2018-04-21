@@ -1,0 +1,17 @@
+{% extends 'myinfo/base.html' %}
+
+{% block content %}
+<div class="container">
+
+<font color='red'><strong><h1>Opinions about me</h1></strong></font>
+<font color='green'>
+    {% for post in data_list %}
+        <u><h1>{{ post.comment_about_me }}</h1></u>
+        <br>
+        posted by:<h4>{{ post.name }}</h4>
+        <br>
+        <hr>
+    {% endfor %}
+</div>
+</font>
+{% endblock %}

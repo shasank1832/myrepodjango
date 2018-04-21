@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+     <body style="background-color:#F0F8FF">
+
+                        {# Custom CSS#}
+                        {% load staticfiles %}
+                         <link rel="stylesheet" href="{% static 'css/mi.css' %}">
+    <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+            <!-- Optional theme -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  </head>
+  <body>
+<nav class="navclass"  style="background-color: coral" >
+  <!-- Navbar content -->
+   <div class="container">
+
+
+
+    <a class='navbar-brand bigbrand' href="{% url 'home' %}" >HOME</a>
+     <a class='navbar-brand bigbrand' href="{% url 'about' %}"  ><i class="fa fa-user">ABOUT ME</a>
+  <a class='navbar-brand bigbrand' href="{% url 'user' %}"  ><i class="fa fa-th">YOUR VIEWS</a>
+    <a class='navbar-brand bigbrand' href="{% url 'list' %}" ><i class="fa fa-usd">POSTS</a>
+      <a class='navbar-brand bigbrand' href="https://www.youtube.com/" >YOUTUBE</a>
+      <a class='navbar-brand bigbrand' href="http://www.espncricinfo.com/" ><U>CRICKET SCORES</U>111</a>
+
+
+
+
+
+</div>
+</nav>
+{% block content %}
+{% endblock %}
+
+  </body>
+</html>
